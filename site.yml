@@ -13,5 +13,5 @@
         state: touch
 
     - name: Pull mapreduce binary and start master node
-      ansible.builtin.shell: nohup /tmp/runmrnode.sh {{index . 0}} {{index . 1}} {{index . 1}} </dev/null >/tmp/fsmasterrun.logs 2>&1 &
+      ansible.builtin.shell: nohup /tmp/runmrnode.sh {{index . 0}} {{index . 1}} {{index . 2}} </dev/null >/tmp/fsmasterrun.logs 2>&1 &
       become: true
