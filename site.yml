@@ -5,7 +5,7 @@
       copy: src=runmrnode.sh dest=/tmp/ mode=0777
 
     - name: Transfer the cluster configuration file
-      copy: src=/tmp/{{index . 1}} dest=/tmp/ mode=0777      
+      copy: src={{index . 1}} dest=/tmp/ mode=0777      
 
     - name: Create file for mapreduce master logs
       ansible.builtin.file:
